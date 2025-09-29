@@ -1,0 +1,370 @@
+/* ===== General Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  font-size: 20px;
+
+}
+
+h2 {
+  color: burlywood;
+  text-shadow: 0 0 10px lightpink;
+  background-color: lightgreen;
+}
+
+body {
+  background: linear-gradient(135deg, #f9f9f9, #eef4ff);
+  color: #333;
+  line-height: 1.2;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  background: linear-gradient( lightpink, #00c6ff);
+  color: rgb(159, 161, 18);
+  padding: 1rem;
+
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
+
+}
+
+.nav-links a {
+  color: rgb(166, 71, 7);
+  text-decoration: none;
+  font-size: 25px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-links {}
+
+.navbar .nav-links a:hover {
+  color: #ffe97f;
+}
+
+.contact-info {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+  display: flex;
+}
+
+.contact-info a {
+  color: red;
+  text-decoration: none;
+  margin-left: 100px;
+
+}
+
+.contact-info span {
+  color: red;
+  background-color: burlywood;
+}
+
+/* ===== Banner ===== */
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #00c6ff, #92c014);
+  color: #fff;
+}
+
+.banner-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.banner-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: brown;
+}
+
+.banner-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: crimson;
+}
+
+.banner-content h2 {
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background: #ffe97f;
+  color: #333;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  background: #ffcd38;
+  transform: scale(1.05);
+}
+
+.banner-image img {
+  max-width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Section Titles ===== */
+section h2 {
+  text-align: center;
+  margin: 2rem 0 1.5rem;
+  font-size: 2rem;
+  color: #0072ff;
+}
+
+/* ===== Services ===== */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  padding: 0 2rem 2rem;
+}
+
+.service-card {
+  background: lightgreen;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.service-card img {
+  width: 60px;
+  margin-bottom: 0.5rem;
+  background-color: pink;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  background: linear-gradient(135deg, #f0faff, #e0f7ff);
+}
+
+/* ===== Packages ===== */
+.packages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.package-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  background-color: #00c6ff;
+  box-shadow: 0 0 20px brown;
+  animation-name: matrix;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.package-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.package-info {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #0077ff;
+  color: #fff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 8px;
+}
+
+.package-price {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: #ff6b6b;
+  color: #fff;
+  padding: 0.4rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* ===== Speciality, Doctors, Testimonials, Blog ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.roll {
+  background: #fff;
+  padding: 1.2rem;
+  border-radius: 15px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background 0.3s;
+  background-color: #a64ca6;
+
+}
+
+.card {
+  background: #fff;
+  padding: 1.2rem;
+  border-radius: 15px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background 0.3s;
+  background-color: #a64ca6;
+  box-shadow: 0 0 20px brown;
+  animation-name: rotating;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.rock {
+  background: #fff;
+  padding: 1.2rem;
+  border-radius: 15px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background 0.3s;
+  background-color: #a64ca6;
+  box-shadow: 0 0 20px brown;
+  animation-name: brock;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.Beep{
+   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 0 2rem 2rem; 
+   animation-name: Beep;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+
+
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 0.8rem;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+}
+
+/* ===== Testimonials Special ===== */
+.testimonials .card {
+  background: #fdf5ff;
+  border-left: 5px solid #a64ca6;
+}
+
+/* ===== Blog Special ===== */
+.blog .card {
+  background: #102d61;
+  border-top: 4px solid #0077ff;
+  
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: linear-gradient(90deg, #0077ff, #00c6ff);
+  color: #fff;
+  text-align: center;
+  padding: 1.2rem;
+  margin-top: 2rem;
+  font-weight: 500;
+}
+
+@keyframes matrix {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(25%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotating {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(25%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes roll {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  50% {
+    transform: rotateY(36:0deg);
+  }
+
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes brock {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  25% {
+    transform: rotateZ(10deg);
+  }
+
+  50% {
+    transform: rotateZ(-10deg);
+  }
+
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+@keyframes Beep {
+  from{
+             transform: scale(0.8);
+  }
+     to{
+      transform: scale(1);
+     }
+}

@@ -1,0 +1,158 @@
+/* ===== General Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f9f9fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  background: linear-gradient(90deg, #0077ff, #00c6ff);
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.2rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #ffe97f;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 2rem;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 250px;
+  padding: 1rem;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background: #ffe97f;
+  color: #333;
+  padding: 0.7rem 1.4rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  background: #ffc107;
+  transform: scale(1.05);
+}
+
+.hero-img img {
+  max-width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ===== Patient Services ===== */
+.patient-services {
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+
+.patient-services h2 {
+  font-size: 2rem;
+  color: #0072ff;
+  margin-bottom: 2rem;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.service-card img {
+  width: 70px;
+  margin-bottom: 1rem;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  background: linear-gradient(135deg, #f0faff, #e0f7ff);
+}
+
+/* ===== Health Tips ===== */
+.health-tips {
+  background: #f0f8ff;
+  padding: 2.5rem 2rem;
+}
+
+.health-tips h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #ff6b6b;
+}
+
+.health-tips ul {
+  max-width: 700px;
+  margin: auto;
+  list-style: none;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: linear-gradient(90deg, #0077ff, #00c6ff);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
